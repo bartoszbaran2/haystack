@@ -4,7 +4,9 @@
 
 #"found the needle at position " plus the index it found the needle, so:
 
-# my solution:
-
 def find_needle(haystack):
-    return f'found the needle at position {haystack.index("needle")}'
+    i = 0
+    while i < len(haystack):
+        if haystack[i] == 'needle':
+            return 'found the needle at position ' + str(i)
+        i += 1
